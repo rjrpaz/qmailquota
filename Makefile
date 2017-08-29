@@ -15,7 +15,7 @@ mailquotacheck: mailquotacheck.c
 	strip mailquotacheck
 
 install:
-	su -c "cp -a mailquotacheck /usr/local/bin/quotacheck" root
+	su -c "cp -a mailquotacheck /usr/local/bin/mailquotacheck" root
 
 clear: 
 	@clear
