@@ -1,0 +1,16 @@
+La forma en que un usuario está sujeto al uso de la quota, es agregando lo siguiente como primera línea del archivo .qmail del usuario:
+
+ | /usr/local/bin/mailquotacheck
+
+Ese comando determina si el espacio del usuario está siendo excedido o no.
+
+El valor que utiliza para comparar por defecto es de 512Mb.
+
+Si queremos utizar valores diferenciados para los usuarios, podemos generar un archivo ".quota" en su maildir (en el mismo directorio donde se encuentra ".qmail"), que incluya el valor deseado en kilobytes.
+
+Ejemplo:
+
+256000  (256 Mb)
+
+Un valor de 0, indica que el usuario no tiene restricciones en ese sentido.
+
