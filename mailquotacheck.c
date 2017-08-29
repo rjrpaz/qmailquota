@@ -9,10 +9,10 @@
 #include <time.h>
 #include <errno.h>
 
-#define DEBUG 1
+#define DEBUG 0
 
 #define FALSE 0
-#define QUOTA_POR_DEFECTO 512000
+#define QUOTA_POR_DEFECTO 512000 /* 512 Mb */
 
 #define SERVERNAME "arcba2emx001"
 
